@@ -1,0 +1,18 @@
+<mat-card>
+  <mat-card>
+    <span>Next Lightning Talks: </span>
+    <strong>4th June</strong>
+  </mat-card>
+  <!-- list of Topics -->
+  <h2>Submitted Topics</h2>
+  <mat-list>
+    <mat-list-item *ngFor="let submission of submissions">
+      <mat-icon matListIcon>speaker_notes</mat-icon>
+      <h3 matLine> {{submission.topic}} </h3>
+      <p matLine>
+        <span> {{submission.description}} </span>
+      </p>
+    </mat-list-item>
+  </mat-list>
+</mat-card>
+
